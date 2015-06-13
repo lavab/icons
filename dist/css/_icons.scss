@@ -1,0 +1,461 @@
+@font-face {
+	font-family: "lavaboom";
+	src: url('../fonts/icons/lavaboom.eot');
+	src: url('../fonts/icons/lavaboom.eot?#iefix') format('eot'),
+		url('../fonts/icons/lavaboom.woff') format('woff'),
+		url('../fonts/icons/lavaboom.ttf') format('truetype'),
+		url('../fonts/icons/lavaboom.svg#lavaboom') format('svg');
+}
+
+%icon {
+	font-family: "lavaboom";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == uE001-uE001-H1 {
+		$char: "\E001";
+	}
+	@if $filename == uE002-uE002-H2 {
+		$char: "\E002";
+	}
+	@if $filename == uE003-uE003-H3 {
+		$char: "\E003";
+	}
+	@if $filename == uE004-uE004-add-contact {
+		$char: "\E004";
+	}
+	@if $filename == uE005-uE005-archive {
+		$char: "\E005";
+	}
+	@if $filename == uE006-uE006-arrow-down {
+		$char: "\E006";
+	}
+	@if $filename == uE007-uE007-arrow-left {
+		$char: "\E007";
+	}
+	@if $filename == uE008-uE008-arrow-right {
+		$char: "\E008";
+	}
+	@if $filename == uE009-uE009-arrow-up {
+		$char: "\E009";
+	}
+	@if $filename == uE00A-uE00A-ban {
+		$char: "\E00A";
+	}
+	@if $filename == uE00B-uE00B-cancel {
+		$char: "\E00B";
+	}
+	@if $filename == uE00C-uE00C-chevron-down {
+		$char: "\E00C";
+	}
+	@if $filename == uE00D-uE00D-close {
+		$char: "\E00D";
+	}
+	@if $filename == uE00E-uE00E-cog {
+		$char: "\E00E";
+	}
+	@if $filename == uE00F-uE00F-compose {
+		$char: "\E00F";
+	}
+	@if $filename == uE010-uE010-contacts {
+		$char: "\E010";
+	}
+	@if $filename == uE011-uE011-delete {
+		$char: "\E011";
+	}
+	@if $filename == uE012-uE012-download {
+		$char: "\E012";
+	}
+	@if $filename == uE013-uE013-draft {
+		$char: "\E013";
+	}
+	@if $filename == uE014-uE014-edit-circle {
+		$char: "\E014";
+	}
+	@if $filename == uE015-uE015-edit {
+		$char: "\E015";
+	}
+	@if $filename == uE016-uE016-empty-trash {
+		$char: "\E016";
+	}
+	@if $filename == uE017-uE017-format-align-center {
+		$char: "\E017";
+	}
+	@if $filename == uE018-uE018-format-align-justify {
+		$char: "\E018";
+	}
+	@if $filename == uE019-uE019-format-align-left {
+		$char: "\E019";
+	}
+	@if $filename == uE01A-uE01A-format-align-right {
+		$char: "\E01A";
+	}
+	@if $filename == uE01B-uE01B-format-bold {
+		$char: "\E01B";
+	}
+	@if $filename == uE01C-uE01C-format-code {
+		$char: "\E01C";
+	}
+	@if $filename == uE01D-uE01D-format-italic {
+		$char: "\E01D";
+	}
+	@if $filename == uE01E-uE01E-format-list-bulleted {
+		$char: "\E01E";
+	}
+	@if $filename == uE01F-uE01F-format-list-numbered {
+		$char: "\E01F";
+	}
+	@if $filename == uE020-uE020-format-underline {
+		$char: "\E020";
+	}
+	@if $filename == uE021-uE021-head {
+		$char: "\E021";
+	}
+	@if $filename == uE022-uE022-inbox {
+		$char: "\E022";
+	}
+	@if $filename == uE023-uE023-info-circle {
+		$char: "\E023";
+	}
+	@if $filename == uE024-uE024-key-pair-download {
+		$char: "\E024";
+	}
+	@if $filename == uE025-uE025-key-pair {
+		$char: "\E025";
+	}
+	@if $filename == uE026-uE026-key-solid {
+		$char: "\E026";
+	}
+	@if $filename == uE027-uE027-key {
+		$char: "\E027";
+	}
+	@if $filename == uE028-uE028-later {
+		$char: "\E028";
+	}
+	@if $filename == uE029-uE029-lavaboom {
+		$char: "\E029";
+	}
+	@if $filename == uE02A-uE02A-lock-hallow {
+		$char: "\E02A";
+	}
+	@if $filename == uE02B-uE02B-lock {
+		$char: "\E02B";
+	}
+	@if $filename == uE02C-uE02C-outbox {
+		$char: "\E02C";
+	}
+	@if $filename == uE02D-uE02D-paper-clip {
+		$char: "\E02D";
+	}
+	@if $filename == uE02E-uE02E-plus-circle {
+		$char: "\E02E";
+	}
+	@if $filename == uE02F-uE02F-plus {
+		$char: "\E02F";
+	}
+	@if $filename == uE030-uE030-power {
+		$char: "\E030";
+	}
+	@if $filename == uE031-uE031-preferences {
+		$char: "\E031";
+	}
+	@if $filename == uE032-uE032-profile {
+		$char: "\E032";
+	}
+	@if $filename == uE033-uE033-provide {
+		$char: "\E033";
+	}
+	@if $filename == uE034-uE034-public-key-download {
+		$char: "\E034";
+	}
+	@if $filename == uE035-uE035-public-key-send {
+		$char: "\E035";
+	}
+	@if $filename == uE036-uE036-public-key-upload {
+		$char: "\E036";
+	}
+	@if $filename == uE037-uE037-put-back {
+		$char: "\E037";
+	}
+	@if $filename == uE038-uE038-read {
+		$char: "\E038";
+	}
+	@if $filename == uE039-uE039-refresh {
+		$char: "\E039";
+	}
+	@if $filename == uE03A-uE03A-reply-all {
+		$char: "\E03A";
+	}
+	@if $filename == uE03B-uE03B-reply {
+		$char: "\E03B";
+	}
+	@if $filename == uE03C-uE03C-save {
+		$char: "\E03C";
+	}
+	@if $filename == uE03D-uE03D-search {
+		$char: "\E03D";
+	}
+	@if $filename == uE03E-uE03E-sent {
+		$char: "\E03E";
+	}
+	@if $filename == uE03F-uE03F-star-outline {
+		$char: "\E03F";
+	}
+	@if $filename == uE040-uE040-star {
+		$char: "\E040";
+	}
+	@if $filename == uE041-uE041-tag {
+		$char: "\E041";
+	}
+	@if $filename == uE042-uE042-trash {
+		$char: "\E042";
+	}
+	@if $filename == uE043-uE043-unlock {
+		$char: "\E043";
+	}
+	@if $filename == uE044-uE044-unread {
+		$char: "\E044";
+	}
+	@if $filename == uE045-uE045-yes {
+		$char: "\E045";
+	}
+	@if $filename == uE046-_icons.css {
+		$char: "\E046";
+	}
+	@if $filename == _icons.less {
+		$char: "\E047";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before) {
+	&:#{$insert} {
+		@extend %icon;
+		content: icon-char($filename);
+	}
+}
+
+.icon-uE001-uE001-H1 {
+	@include icon(uE001-uE001-H1);
+}
+.icon-uE002-uE002-H2 {
+	@include icon(uE002-uE002-H2);
+}
+.icon-uE003-uE003-H3 {
+	@include icon(uE003-uE003-H3);
+}
+.icon-uE004-uE004-add-contact {
+	@include icon(uE004-uE004-add-contact);
+}
+.icon-uE005-uE005-archive {
+	@include icon(uE005-uE005-archive);
+}
+.icon-uE006-uE006-arrow-down {
+	@include icon(uE006-uE006-arrow-down);
+}
+.icon-uE007-uE007-arrow-left {
+	@include icon(uE007-uE007-arrow-left);
+}
+.icon-uE008-uE008-arrow-right {
+	@include icon(uE008-uE008-arrow-right);
+}
+.icon-uE009-uE009-arrow-up {
+	@include icon(uE009-uE009-arrow-up);
+}
+.icon-uE00A-uE00A-ban {
+	@include icon(uE00A-uE00A-ban);
+}
+.icon-uE00B-uE00B-cancel {
+	@include icon(uE00B-uE00B-cancel);
+}
+.icon-uE00C-uE00C-chevron-down {
+	@include icon(uE00C-uE00C-chevron-down);
+}
+.icon-uE00D-uE00D-close {
+	@include icon(uE00D-uE00D-close);
+}
+.icon-uE00E-uE00E-cog {
+	@include icon(uE00E-uE00E-cog);
+}
+.icon-uE00F-uE00F-compose {
+	@include icon(uE00F-uE00F-compose);
+}
+.icon-uE010-uE010-contacts {
+	@include icon(uE010-uE010-contacts);
+}
+.icon-uE011-uE011-delete {
+	@include icon(uE011-uE011-delete);
+}
+.icon-uE012-uE012-download {
+	@include icon(uE012-uE012-download);
+}
+.icon-uE013-uE013-draft {
+	@include icon(uE013-uE013-draft);
+}
+.icon-uE014-uE014-edit-circle {
+	@include icon(uE014-uE014-edit-circle);
+}
+.icon-uE015-uE015-edit {
+	@include icon(uE015-uE015-edit);
+}
+.icon-uE016-uE016-empty-trash {
+	@include icon(uE016-uE016-empty-trash);
+}
+.icon-uE017-uE017-format-align-center {
+	@include icon(uE017-uE017-format-align-center);
+}
+.icon-uE018-uE018-format-align-justify {
+	@include icon(uE018-uE018-format-align-justify);
+}
+.icon-uE019-uE019-format-align-left {
+	@include icon(uE019-uE019-format-align-left);
+}
+.icon-uE01A-uE01A-format-align-right {
+	@include icon(uE01A-uE01A-format-align-right);
+}
+.icon-uE01B-uE01B-format-bold {
+	@include icon(uE01B-uE01B-format-bold);
+}
+.icon-uE01C-uE01C-format-code {
+	@include icon(uE01C-uE01C-format-code);
+}
+.icon-uE01D-uE01D-format-italic {
+	@include icon(uE01D-uE01D-format-italic);
+}
+.icon-uE01E-uE01E-format-list-bulleted {
+	@include icon(uE01E-uE01E-format-list-bulleted);
+}
+.icon-uE01F-uE01F-format-list-numbered {
+	@include icon(uE01F-uE01F-format-list-numbered);
+}
+.icon-uE020-uE020-format-underline {
+	@include icon(uE020-uE020-format-underline);
+}
+.icon-uE021-uE021-head {
+	@include icon(uE021-uE021-head);
+}
+.icon-uE022-uE022-inbox {
+	@include icon(uE022-uE022-inbox);
+}
+.icon-uE023-uE023-info-circle {
+	@include icon(uE023-uE023-info-circle);
+}
+.icon-uE024-uE024-key-pair-download {
+	@include icon(uE024-uE024-key-pair-download);
+}
+.icon-uE025-uE025-key-pair {
+	@include icon(uE025-uE025-key-pair);
+}
+.icon-uE026-uE026-key-solid {
+	@include icon(uE026-uE026-key-solid);
+}
+.icon-uE027-uE027-key {
+	@include icon(uE027-uE027-key);
+}
+.icon-uE028-uE028-later {
+	@include icon(uE028-uE028-later);
+}
+.icon-uE029-uE029-lavaboom {
+	@include icon(uE029-uE029-lavaboom);
+}
+.icon-uE02A-uE02A-lock-hallow {
+	@include icon(uE02A-uE02A-lock-hallow);
+}
+.icon-uE02B-uE02B-lock {
+	@include icon(uE02B-uE02B-lock);
+}
+.icon-uE02C-uE02C-outbox {
+	@include icon(uE02C-uE02C-outbox);
+}
+.icon-uE02D-uE02D-paper-clip {
+	@include icon(uE02D-uE02D-paper-clip);
+}
+.icon-uE02E-uE02E-plus-circle {
+	@include icon(uE02E-uE02E-plus-circle);
+}
+.icon-uE02F-uE02F-plus {
+	@include icon(uE02F-uE02F-plus);
+}
+.icon-uE030-uE030-power {
+	@include icon(uE030-uE030-power);
+}
+.icon-uE031-uE031-preferences {
+	@include icon(uE031-uE031-preferences);
+}
+.icon-uE032-uE032-profile {
+	@include icon(uE032-uE032-profile);
+}
+.icon-uE033-uE033-provide {
+	@include icon(uE033-uE033-provide);
+}
+.icon-uE034-uE034-public-key-download {
+	@include icon(uE034-uE034-public-key-download);
+}
+.icon-uE035-uE035-public-key-send {
+	@include icon(uE035-uE035-public-key-send);
+}
+.icon-uE036-uE036-public-key-upload {
+	@include icon(uE036-uE036-public-key-upload);
+}
+.icon-uE037-uE037-put-back {
+	@include icon(uE037-uE037-put-back);
+}
+.icon-uE038-uE038-read {
+	@include icon(uE038-uE038-read);
+}
+.icon-uE039-uE039-refresh {
+	@include icon(uE039-uE039-refresh);
+}
+.icon-uE03A-uE03A-reply-all {
+	@include icon(uE03A-uE03A-reply-all);
+}
+.icon-uE03B-uE03B-reply {
+	@include icon(uE03B-uE03B-reply);
+}
+.icon-uE03C-uE03C-save {
+	@include icon(uE03C-uE03C-save);
+}
+.icon-uE03D-uE03D-search {
+	@include icon(uE03D-uE03D-search);
+}
+.icon-uE03E-uE03E-sent {
+	@include icon(uE03E-uE03E-sent);
+}
+.icon-uE03F-uE03F-star-outline {
+	@include icon(uE03F-uE03F-star-outline);
+}
+.icon-uE040-uE040-star {
+	@include icon(uE040-uE040-star);
+}
+.icon-uE041-uE041-tag {
+	@include icon(uE041-uE041-tag);
+}
+.icon-uE042-uE042-trash {
+	@include icon(uE042-uE042-trash);
+}
+.icon-uE043-uE043-unlock {
+	@include icon(uE043-uE043-unlock);
+}
+.icon-uE044-uE044-unread {
+	@include icon(uE044-uE044-unread);
+}
+.icon-uE045-uE045-yes {
+	@include icon(uE045-uE045-yes);
+}
+.icon-uE046-_icons.css {
+	@include icon(uE046-_icons.css);
+}
+.icon-_icons.less {
+	@include icon(_icons.less);
+}

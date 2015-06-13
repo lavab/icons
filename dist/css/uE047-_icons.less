@@ -1,0 +1,315 @@
+@font-face {
+	font-family: "lavaboom";
+	src: url('../fonts/icons/lavaboom.eot');
+	src: url('../fonts/icons/lavaboom.eot?#iefix') format('eot'),
+		url('../fonts/icons/lavaboom.woff') format('woff'),
+		url('../fonts/icons/lavaboom.ttf') format('truetype'),
+		url('../fonts/icons/lavaboom.svg#lavaboom') format('svg');
+}
+
+.icon-base-pseudo {
+	font-family: "lavaboom";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@uE001-H1: "\E001";
+	@uE002-H2: "\E002";
+	@uE003-H3: "\E003";
+	@uE004-add-contact: "\E004";
+	@uE005-archive: "\E005";
+	@uE006-arrow-down: "\E006";
+	@uE007-arrow-left: "\E007";
+	@uE008-arrow-right: "\E008";
+	@uE009-arrow-up: "\E009";
+	@uE00A-ban: "\E00A";
+	@uE00B-cancel: "\E00B";
+	@uE00C-chevron-down: "\E00C";
+	@uE00D-close: "\E00D";
+	@uE00E-cog: "\E00E";
+	@uE00F-compose: "\E00F";
+	@uE010-contacts: "\E010";
+	@uE011-delete: "\E011";
+	@uE012-download: "\E012";
+	@uE013-draft: "\E013";
+	@uE014-edit-circle: "\E014";
+	@uE015-edit: "\E015";
+	@uE016-empty-trash: "\E016";
+	@uE017-format-align-center: "\E017";
+	@uE018-format-align-justify: "\E018";
+	@uE019-format-align-left: "\E019";
+	@uE01A-format-align-right: "\E01A";
+	@uE01B-format-bold: "\E01B";
+	@uE01C-format-code: "\E01C";
+	@uE01D-format-italic: "\E01D";
+	@uE01E-format-list-bulleted: "\E01E";
+	@uE01F-format-list-numbered: "\E01F";
+	@uE020-format-underline: "\E020";
+	@uE021-head: "\E021";
+	@uE022-inbox: "\E022";
+	@uE023-info-circle: "\E023";
+	@uE024-key-pair-download: "\E024";
+	@uE025-key-pair: "\E025";
+	@uE026-key-solid: "\E026";
+	@uE027-key: "\E027";
+	@uE028-later: "\E028";
+	@uE029-lavaboom: "\E029";
+	@uE02A-lock-hallow: "\E02A";
+	@uE02B-lock: "\E02B";
+	@uE02C-outbox: "\E02C";
+	@uE02D-paper-clip: "\E02D";
+	@uE02E-plus-circle: "\E02E";
+	@uE02F-plus: "\E02F";
+	@uE030-power: "\E030";
+	@uE031-preferences: "\E031";
+	@uE032-profile: "\E032";
+	@uE033-provide: "\E033";
+	@uE034-public-key-download: "\E034";
+	@uE035-public-key-send: "\E035";
+	@uE036-public-key-upload: "\E036";
+	@uE037-put-back: "\E037";
+	@uE038-read: "\E038";
+	@uE039-refresh: "\E039";
+	@uE03A-reply-all: "\E03A";
+	@uE03B-reply: "\E03B";
+	@uE03C-save: "\E03C";
+	@uE03D-search: "\E03D";
+	@uE03E-sent: "\E03E";
+	@uE03F-star-outline: "\E03F";
+	@uE040-star: "\E040";
+	@uE041-tag: "\E041";
+	@uE042-trash: "\E042";
+	@uE043-unlock: "\E043";
+	@uE044-unread: "\E044";
+	@uE045-yes: "\E045";
+	@_icons.css: "\E046";
+	
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
+
+.icon-uE001-H1 {
+	.icon(uE001-H1);
+}
+.icon-uE002-H2 {
+	.icon(uE002-H2);
+}
+.icon-uE003-H3 {
+	.icon(uE003-H3);
+}
+.icon-uE004-add-contact {
+	.icon(uE004-add-contact);
+}
+.icon-uE005-archive {
+	.icon(uE005-archive);
+}
+.icon-uE006-arrow-down {
+	.icon(uE006-arrow-down);
+}
+.icon-uE007-arrow-left {
+	.icon(uE007-arrow-left);
+}
+.icon-uE008-arrow-right {
+	.icon(uE008-arrow-right);
+}
+.icon-uE009-arrow-up {
+	.icon(uE009-arrow-up);
+}
+.icon-uE00A-ban {
+	.icon(uE00A-ban);
+}
+.icon-uE00B-cancel {
+	.icon(uE00B-cancel);
+}
+.icon-uE00C-chevron-down {
+	.icon(uE00C-chevron-down);
+}
+.icon-uE00D-close {
+	.icon(uE00D-close);
+}
+.icon-uE00E-cog {
+	.icon(uE00E-cog);
+}
+.icon-uE00F-compose {
+	.icon(uE00F-compose);
+}
+.icon-uE010-contacts {
+	.icon(uE010-contacts);
+}
+.icon-uE011-delete {
+	.icon(uE011-delete);
+}
+.icon-uE012-download {
+	.icon(uE012-download);
+}
+.icon-uE013-draft {
+	.icon(uE013-draft);
+}
+.icon-uE014-edit-circle {
+	.icon(uE014-edit-circle);
+}
+.icon-uE015-edit {
+	.icon(uE015-edit);
+}
+.icon-uE016-empty-trash {
+	.icon(uE016-empty-trash);
+}
+.icon-uE017-format-align-center {
+	.icon(uE017-format-align-center);
+}
+.icon-uE018-format-align-justify {
+	.icon(uE018-format-align-justify);
+}
+.icon-uE019-format-align-left {
+	.icon(uE019-format-align-left);
+}
+.icon-uE01A-format-align-right {
+	.icon(uE01A-format-align-right);
+}
+.icon-uE01B-format-bold {
+	.icon(uE01B-format-bold);
+}
+.icon-uE01C-format-code {
+	.icon(uE01C-format-code);
+}
+.icon-uE01D-format-italic {
+	.icon(uE01D-format-italic);
+}
+.icon-uE01E-format-list-bulleted {
+	.icon(uE01E-format-list-bulleted);
+}
+.icon-uE01F-format-list-numbered {
+	.icon(uE01F-format-list-numbered);
+}
+.icon-uE020-format-underline {
+	.icon(uE020-format-underline);
+}
+.icon-uE021-head {
+	.icon(uE021-head);
+}
+.icon-uE022-inbox {
+	.icon(uE022-inbox);
+}
+.icon-uE023-info-circle {
+	.icon(uE023-info-circle);
+}
+.icon-uE024-key-pair-download {
+	.icon(uE024-key-pair-download);
+}
+.icon-uE025-key-pair {
+	.icon(uE025-key-pair);
+}
+.icon-uE026-key-solid {
+	.icon(uE026-key-solid);
+}
+.icon-uE027-key {
+	.icon(uE027-key);
+}
+.icon-uE028-later {
+	.icon(uE028-later);
+}
+.icon-uE029-lavaboom {
+	.icon(uE029-lavaboom);
+}
+.icon-uE02A-lock-hallow {
+	.icon(uE02A-lock-hallow);
+}
+.icon-uE02B-lock {
+	.icon(uE02B-lock);
+}
+.icon-uE02C-outbox {
+	.icon(uE02C-outbox);
+}
+.icon-uE02D-paper-clip {
+	.icon(uE02D-paper-clip);
+}
+.icon-uE02E-plus-circle {
+	.icon(uE02E-plus-circle);
+}
+.icon-uE02F-plus {
+	.icon(uE02F-plus);
+}
+.icon-uE030-power {
+	.icon(uE030-power);
+}
+.icon-uE031-preferences {
+	.icon(uE031-preferences);
+}
+.icon-uE032-profile {
+	.icon(uE032-profile);
+}
+.icon-uE033-provide {
+	.icon(uE033-provide);
+}
+.icon-uE034-public-key-download {
+	.icon(uE034-public-key-download);
+}
+.icon-uE035-public-key-send {
+	.icon(uE035-public-key-send);
+}
+.icon-uE036-public-key-upload {
+	.icon(uE036-public-key-upload);
+}
+.icon-uE037-put-back {
+	.icon(uE037-put-back);
+}
+.icon-uE038-read {
+	.icon(uE038-read);
+}
+.icon-uE039-refresh {
+	.icon(uE039-refresh);
+}
+.icon-uE03A-reply-all {
+	.icon(uE03A-reply-all);
+}
+.icon-uE03B-reply {
+	.icon(uE03B-reply);
+}
+.icon-uE03C-save {
+	.icon(uE03C-save);
+}
+.icon-uE03D-search {
+	.icon(uE03D-search);
+}
+.icon-uE03E-sent {
+	.icon(uE03E-sent);
+}
+.icon-uE03F-star-outline {
+	.icon(uE03F-star-outline);
+}
+.icon-uE040-star {
+	.icon(uE040-star);
+}
+.icon-uE041-tag {
+	.icon(uE041-tag);
+}
+.icon-uE042-trash {
+	.icon(uE042-trash);
+}
+.icon-uE043-unlock {
+	.icon(uE043-unlock);
+}
+.icon-uE044-unread {
+	.icon(uE044-unread);
+}
+.icon-uE045-yes {
+	.icon(uE045-yes);
+}
+.icon-_icons.css {
+	.icon(_icons.css);
+}
