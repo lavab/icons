@@ -13,7 +13,11 @@ function processSvg(svg) {
   return (
     optimize(svg)
       .then(setAttrs)
-      .then(format)
+      .then(output =>
+        format(output, {
+          parser: 'flow',
+        }),
+      )
       // remove semicolon inserted by prettier
       // because prettier thinks it's formatting JSX not HTML
       .then(svg => svg.replace(/;/g, ''))
@@ -28,10 +32,20 @@ function processSvg(svg) {
 function optimize(svg) {
   const svgo = new Svgo({
     plugins: [
-      { convertShapeToPath: false },
-      { mergePaths: false },
-      { removeAttrs: { attrs: '(fill|stroke.*)' } },
-      { removeTitle: true },
+      {
+        convertShapeToPath: false,
+      },
+      {
+        mergePaths: false,
+      },
+      {
+        removeAttrs: {
+          attrs: '(fill|stroke.*)',
+        },
+      },
+      {
+        removeTitle: true,
+      },
     ],
   });
 
