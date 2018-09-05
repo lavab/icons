@@ -1,8 +1,8 @@
 /* eslint-env jest */
-import feather from '../index';
+import lavaIcons from '../index';
 
 test('has correct properties', () => {
-  expect(feather).toHaveProperty('icons');
-  expect(feather).toHaveProperty('toSvg');
-  expect(feather).toHaveProperty('replace');
+  expect(lavaIcons).toHaveProperty('icons');
+  expect(lavaIcons).toHaveProperty('toSvg');
+  expect(lavaIcons).toHaveProperty('replace');
 });

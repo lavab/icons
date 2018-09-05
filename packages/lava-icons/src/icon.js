@@ -9,7 +9,7 @@ class Icon {
     this.tags = tags;
     this.attrs = {
       ...DEFAULT_ATTRS,
-      ...{ class: `feather feather-${name}` },
+      ...{ class: `lava-icon lava-icon-${name}` },
     };
   }
 

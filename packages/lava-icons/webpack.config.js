@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'feather',
+    library: 'lavaIcons',
     // Prevents webpack from referencing `window` in the UMD build
     // Source: https://git.io/vppgU
     globalObject: "typeof self !== 'undefined' ? self : this",

@@ -4,7 +4,7 @@ exports[`exports correct object 1`] = `
 Object {
   "icon1": Icon {
     "attrs": Object {
-      "class": "feather feather-icon1",
+      "class": "lava-icon lava-icon-icon1",
       "fill": "none",
       "height": 24,
       "stroke": "currentColor",
@@ -26,7 +26,7 @@ Object {
   },
   "icon2": Icon {
     "attrs": Object {
-      "class": "feather feather-icon2",
+      "class": "lava-icon lava-icon-icon2",
       "fill": "none",
       "height": 24,
       "stroke": "currentColor",

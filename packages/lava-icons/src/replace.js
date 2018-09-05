@@ -29,6 +29,7 @@ function replace(attrs = {}) {
  * @param {Object} attrs
  */
 function replaceElement(element, attrs = {}) {
+  console.log(arguments, icons)
   const elementAttrs = getAttrs(element);
   const name = elementAttrs['data-lava-icon'];
   delete elementAttrs['data-lava-icon'];
