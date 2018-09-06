@@ -1,4 +1,4 @@
-# Feather
+# Lava Icons
 
 [![Build status](https://img.shields.io/travis/feathericons/feather/master.svg?style=flat-square)](https://travis-ci.org/feathericons/feather)
 [![Coverage](https://img.shields.io/codecov/c/github/feathericons/feather/master.svg?style=flat-square)](https://codecov.io/gh/feathericons/feather)
@@ -11,17 +11,11 @@
 
 Feather is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability.
 
-https://feathericons.com
+https://github.io/lavab/icons/
 
 ```shell
-npm install feather-icons
+npm install lava-icons
 ```
-
-**Sponsored by**
-
-<a href="https://stdlib.com">
-  <img src="https://stdlib.com/static/images/stdlib-logo-wordmark-128.png" width="128" />
-</a>
 
 ## Table of Contents
 

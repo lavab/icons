@@ -7,9 +7,7 @@ Icon {
     "fill": "none",
     "height": 24,
     "stroke": "currentColor",
-    "stroke-linecap": "round",
-    "stroke-linejoin": "round",
-    "stroke-width": 2,
+    "stroke-width": 1,
     "viewBox": "0 0 24 24",
     "width": 24,
     "xmlns": "http://www.w3.org/2000/svg",
@@ -32,9 +30,7 @@ Icon {
     "fill": "none",
     "height": 24,
     "stroke": "currentColor",
-    "stroke-linecap": "round",
-    "stroke-linejoin": "round",
-    "stroke-width": 2,
+    "stroke-width": 1,
     "viewBox": "0 0 24 24",
     "width": 24,
     "xmlns": "http://www.w3.org/2000/svg",
@@ -47,8 +43,8 @@ Icon {
 
 exports[`toString() returns correct string 1`] = `"<line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" />"`;
 
-exports[`toSvg() returns correct string 1`] = `"<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"lava-icon lava-icon-test\\"><line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" /></svg>"`;
+exports[`toSvg() returns correct string 1`] = `"<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"1\\" class=\\"lava-icon lava-icon-test\\"><line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" /></svg>"`;
 
-exports[`toSvg() returns correct string 2`] = `"<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"1\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"lava-icon lava-icon-test\\" color=\\"red\\"><line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" /></svg>"`;
+exports[`toSvg() returns correct string 2`] = `"<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"1\\" class=\\"lava-icon lava-icon-test\\" color=\\"red\\"><line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" /></svg>"`;
 
-exports[`toSvg() returns correct string 3`] = `"<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"lava-icon lava-icon-test foo bar\\" color=\\"red\\"><line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" /></svg>"`;
+exports[`toSvg() returns correct string 3`] = `"<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"1\\" class=\\"lava-icon lava-icon-test foo bar\\" color=\\"red\\"><line x1=\\"23\\" y1=\\"1\\" x2=\\"1\\" y2=\\"23\\" /><line x1=\\"1\\" y1=\\"1\\" x2=\\"23\\" y2=\\"23\\" /></svg>"`;

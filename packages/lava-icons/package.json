@@ -1,6 +1,6 @@
 {
   "name": "lava-icons",
-  "version": "0.0.0-development",
+  "version": "0.0.1-development",
   "description": "Simply beautiful open source icons from the Lavaboom project",
   "main": "dist/lava.js",
   "unpkg": "dist/lava.min.js",
@@ -11,11 +11,14 @@
     "all": "npm-run-all --sequential build lint test:coverage",
     "build": "./bin/build.sh",
     "lint": "eslint .",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:usnap": "jest -u",
+    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "cm": "git-cz",
     "precommit": "lint-staged",
-    "commitmsg": "commitlint --edit"
+    "commitmsg": "commitlint --edit",
+    "serve": "live-server ./dist"
   },
   "config": {
     "commitizen": {
@@ -30,7 +33,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "core-js": "^2.5.3"
+    "core-js": "^2.5.3",
+    "live-server": "^1.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^5.2.5",
